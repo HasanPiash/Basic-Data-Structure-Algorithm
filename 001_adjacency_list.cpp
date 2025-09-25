@@ -12,6 +12,7 @@ int main()
         mat[a].push_back(b);
         mat[b].push_back(a);
     }
+    
     vector<int> v;
     for (int i = 0; i < mat[3].size(); i++)
     {
