@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 1e5 + 5;
-bool vis[N];
+bool vis[N]; 
 vector<int> adj[N];
 int parentArray[N];
 bool ans;
