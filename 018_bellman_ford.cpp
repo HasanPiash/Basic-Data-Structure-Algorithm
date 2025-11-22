@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-class Edge
+class Edge 
 {
 public:
     int u, v, c;
