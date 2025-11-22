@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-using namespace std;
+using namespace std; 
 const int N = 100;
 vector<pair<int, int>> v[N];
 int dis[N];
