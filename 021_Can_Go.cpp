@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-using namespace std;
+using namespace std; 
 const int N=1005;
 const long long INFT=1e18;
 vector<pair<int,int>>adj[N];
