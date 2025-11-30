@@ -13,7 +13,7 @@ int bfs(int N,int M,int Ki,int Kj,int Qi,int Qj){
     vstd[Ki][Kj]=true;
     while(!Q.empty()){
         pair<pair<int,int>,int>crnt=Q.front();
-        Q.pop();
+        Q.pop(); 
         int x=crnt.first.first;
         int y=crnt.first.second;
         int steps=crnt.second;
