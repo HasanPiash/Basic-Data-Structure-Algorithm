@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-using namespace std;
+using namespace std; 
 const int N = 1e5 + 5;
 int parent[N];
 int group_size[N];
