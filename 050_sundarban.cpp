@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-using namespace std;
+using namespace std; 
 char a[50][50];
 bool vis[50][50];
 int dis[50][50];
