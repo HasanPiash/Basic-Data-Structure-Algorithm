@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-using namespace std;
+using namespace std; 
 const int N=1e5+5;
 long long prnt[N];
 long long grp_size[N];
