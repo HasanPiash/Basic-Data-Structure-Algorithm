@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<bits/stdc++.h> 
 using namespace std;
 const int MAX = 1005;
 char grid[MAX][MAX];
