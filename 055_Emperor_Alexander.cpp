@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-using namespace std;
+using namespace std; 
 const int N=1e5+5;
 long long prnt[N],grp_size[N];
 void dsu_init(int n){
