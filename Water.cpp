@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<bits/stdc++.h> 
 using namespace std;
 void Water(const vector<int>& hghts){
     int lrgst=-1,secondLrgst=-1;
