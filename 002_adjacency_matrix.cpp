@@ -6,6 +6,7 @@ int main()
     cin >> n >> e;
     int mat[n][n];
     memset(mat, 0, sizeof(mat));
+    
     while (e--)
     {
         int a, b;
