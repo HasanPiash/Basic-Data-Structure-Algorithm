@@ -14,6 +14,7 @@ void dfs(int src)
             dfs(child);
     }
 }
+
 int main()
 {
     int n, e;
@@ -35,6 +36,7 @@ int main()
             c++;
         }
     }
+    
     cout << "component - " << c << endl;
     return 0;
 }
