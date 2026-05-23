@@ -36,6 +36,7 @@ void bfs(int si, int sj)
         }
     }
 }
+
 int main()
 {
     cin >> n >> m;
@@ -46,6 +47,7 @@ int main()
             cin >> a[i][j];
         }
     }
+    
     int si, sj;
     cin >> si >> sj;
     memset(vis, false, sizeof(vis));
