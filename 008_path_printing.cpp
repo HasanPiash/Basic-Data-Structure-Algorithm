@@ -26,6 +26,7 @@ void bfs(int src)
         }
     }
 }
+
 int main()
 {
     int n, e;
@@ -45,6 +46,7 @@ int main()
     bfs(src);
     int x = des;
     vector<int> path;
+    
     while (x != -1)
     {
         path.push_back(x);
