@@ -10,6 +10,7 @@ bool valid(int i, int j)
         return false;
     return true;
 }
+
 void dfs(int si, int sj)
 {
     cout << si << " " << sj << endl;
@@ -24,6 +25,7 @@ void dfs(int si, int sj)
         }
     }
 }
+
 int main()
 {
     cin >> n >> m;
