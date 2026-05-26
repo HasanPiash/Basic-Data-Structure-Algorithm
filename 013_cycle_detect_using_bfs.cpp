@@ -30,6 +30,7 @@ void bfs(int s)
         }
     }
 }
+
 int main()
 {
     int n, e;
@@ -41,6 +42,7 @@ int main()
         adj[a].push_back(b);
         adj[b].push_back(a);
     }
+    
     memset(vis, false, sizeof(vis));
     memset(parentArray, -1, sizeof(parentArray));
     ans = false;
