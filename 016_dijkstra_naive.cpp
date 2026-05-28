@@ -8,6 +8,7 @@ void dijkstra(int src)
     queue<pair<int, int>> q;
     q.push({src, 0});
     dis[src] = 0;
+    
     while (!q.empty())
     {
         pair<int, int> parent = q.front();
@@ -27,6 +28,7 @@ void dijkstra(int src)
         }
     }
 }
+
 int main()
 {
     int n, e;
