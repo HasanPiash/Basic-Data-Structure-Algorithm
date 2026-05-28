@@ -23,6 +23,7 @@ void dfs(int parent)
         }
     }
 }
+
 int main()
 {
     int n, e;
@@ -37,6 +38,7 @@ int main()
     memset(vis, false, sizeof(vis));
     memset(parentArray, -1, sizeof(parentArray));
     ans = false;
+    
     for (int i = 0; i < n; i++)
     {
         if (!vis[i])
