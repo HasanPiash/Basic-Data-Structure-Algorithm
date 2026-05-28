@@ -23,6 +23,7 @@ void dfs(int parent)
     // kaj sesh
     pathVisit[parent] = false;
 }
+
 int main()
 {
     int n, e;
@@ -37,6 +38,7 @@ int main()
     memset(vis, false, sizeof(vis));
     memset(pathVisit, false, sizeof(pathVisit));
     ans = false;
+    
     for (int i = 0; i < n; i++)
     {
         if (!vis[i])
