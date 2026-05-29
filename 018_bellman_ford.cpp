@@ -11,6 +11,7 @@ public:
         this->c = c;
     }
 };
+
 const int N = 1e5 + 5;
 int dis[N];
 int main()
@@ -43,6 +44,7 @@ int main()
             }
         }
     }
+    
     for (int i = 0; i < n; i++)
         cout << i << " -> " << dis[i] << endl;
     return 0;
