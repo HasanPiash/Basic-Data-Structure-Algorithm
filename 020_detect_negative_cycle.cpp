@@ -11,6 +11,7 @@ public:
         this->c = c;
     }
 };
+
 const int N = 1e5 + 5;
 int dis[N];
 int main()
@@ -24,6 +25,7 @@ int main()
         cin >> u >> v >> c;
         EdgeList.push_back(Edge(u, v, c));
     }
+    
     for (int i = 0; i < n; i++)
     {
         dis[i] = INT_MAX;
@@ -43,6 +45,7 @@ int main()
             }
         }
     }
+    
     bool cycle = false;
     for (Edge ed : EdgeList)
     {
