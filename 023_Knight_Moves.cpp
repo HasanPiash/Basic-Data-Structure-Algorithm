@@ -29,8 +29,10 @@ int bfs(int N,int M,int Ki,int Kj,int Qi,int Qj){
             }
         }
     }
+    
     return -1;
 }
+
 int main(){
     int T;
     cin>>T;
