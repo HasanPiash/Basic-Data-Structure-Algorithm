@@ -28,6 +28,7 @@ void bellmanFord(int srce,int n){
         }
     }
 }
+
 int main(){
     int N,E;
     cin>>N>>E;
@@ -36,6 +37,7 @@ int main(){
         cin>>A>>B>>W;
         edges.push_back(CanGoAgain(A,B,W));
     }
+    
     int srce;
     cin>>srce;
     bellmanFord(srce,N);
