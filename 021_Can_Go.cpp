@@ -11,6 +11,7 @@ void CanGo(int src,int n){
     }
     dist[src]=0;
     dw.push(make_pair(0,src));
+    
     while(!dw.empty()){
         pair<long long,int>prnt=dw.top();
         dw.pop();
@@ -27,6 +28,7 @@ void CanGo(int src,int n){
         }
     }
 }
+
 int main(){
     int N,E;
     cin>>N>>E;
@@ -40,6 +42,7 @@ int main(){
     CanGo(source,N);
     int T;
     cin>>T;
+    
     while(T--){
         int dest;
         long long mxCst;
