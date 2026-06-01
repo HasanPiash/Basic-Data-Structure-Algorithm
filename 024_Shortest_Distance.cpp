@@ -16,6 +16,7 @@ int main(){
             }
         }
     }   
+    
     for(ll i=0; i<E; i++){
         ll A,B,W;
         cin>>A>>B>>W;
@@ -34,6 +35,7 @@ int main(){
     }
     ll Q;
     cin>>Q;
+    
     while (Q--){
         ll X,Y;
         cin>>X>>Y;
