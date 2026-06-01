@@ -28,6 +28,7 @@ void convert(int n, vector<int> adj[])
         cout << endl;
     }
 }
+
 int main()
 {
     int n, e;
