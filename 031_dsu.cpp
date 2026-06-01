@@ -13,6 +13,7 @@ void dsu_initialize(int n)
         level[i] = 0;
     }
 }
+
 int dsu_find(int node)
 {
     if (par[node] == -1)
@@ -21,6 +22,7 @@ int dsu_find(int node)
     par[node] = leader;
     return leader;
 }
+
 void dsu_union(int node1, int node2)
 {
     // bad
@@ -61,6 +63,7 @@ void dsu_union_by_size(int node1, int node2)
         group_size[leaderB] += group_size[leaderA];
     }
 }
+
 int main()
 {
     dsu_initialize(7);
