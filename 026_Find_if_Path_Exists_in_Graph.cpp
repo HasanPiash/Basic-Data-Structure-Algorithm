@@ -16,7 +16,7 @@ public:
             }
         }
     }
-
+  
     bool validPath(int n, vector<vector<int>> &edges, int source, int d)
     {
         memset(vis, false, sizeof(vis));
@@ -26,8 +26,7 @@ public:
             int b = edges[i][1];
             v[a].push_back(b);
             v[b].push_back(a);
-        }
-        
+        }  
         dfs(source);
         return vis[d];
     }
