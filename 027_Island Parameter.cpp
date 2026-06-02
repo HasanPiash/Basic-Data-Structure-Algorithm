@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
- 
 class Solution
 {
 public:
@@ -15,6 +14,7 @@ public:
         else
             return false;
     }
+
     void dfs(int si, int sj, vector<vector<int>> &grid)
     {
         vis[si][sj] = true;
@@ -27,6 +27,7 @@ public:
                 if (grid[ci][cj] == 0)
                     ans++;
             }
+             
             else
             {
                 ans++;
@@ -37,12 +38,14 @@ public:
             }
         }
     }
+
     int islandPerimeter(vector<vector<int>> &grid)
     {
         memset(vis, false, sizeof(vis));
         ans = 0;
         n = grid.size();
         m = grid[0].size();
+     
         for (int i = 0; i < n; i++)
         {
             for (int j = 0; j < m; j++)
