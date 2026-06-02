@@ -1,6 +1,5 @@
 #include <bits/stdc++.h> 
 using namespace std;
-
 class Solution
 {
 public:
@@ -30,6 +29,7 @@ public:
             }
         }
     }
+
     int countSubIslands(vector<vector<int>> &grid1, vector<vector<int>> &grid2)
     {
         memset(vis, false, sizeof(vis));
@@ -49,6 +49,7 @@ public:
                 }
             }
         }
+        
         return ans;
     }
 };
