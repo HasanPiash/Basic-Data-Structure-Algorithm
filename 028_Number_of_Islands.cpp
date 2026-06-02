@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
- 
 class Solution
 {
 public:
@@ -14,6 +13,7 @@ public:
         else
             return false;
     }
+
     void dfs(int si, int sj, vector<vector<char>> &grid)
     {
         vis[si][sj] = true;
@@ -27,6 +27,7 @@ public:
             }
         }
     }
+
     int numIslands(vector<vector<char>> &grid)
     {
         n = grid.size();
@@ -44,6 +45,7 @@ public:
                 }
             }
         }
+     
         return ans;
     }
 };
