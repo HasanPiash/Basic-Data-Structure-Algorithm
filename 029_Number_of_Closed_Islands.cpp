@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std; 
-
 class Solution
 {
 public:
@@ -30,6 +29,7 @@ public:
             }
         }
     }
+ 
     int closedIsland(vector<vector<int>> &grid)
     {
         memset(vis, false, sizeof(vis));
@@ -50,7 +50,7 @@ public:
                     }
                 }
             }
-        }
+        }  
         return ans;
     }
 };
