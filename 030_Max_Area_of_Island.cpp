@@ -1,11 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std; 
-class Solution
+class Solution  
 {
 public:
     bool vis[55][55];
     int ans;
-    int n, m;
+    int n, m;   
     vector<pair<int, int>> d = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}};
     bool valid(int ci, int cj)
     {
@@ -14,6 +14,7 @@ public:
         else
             return false;
     }
+
     void dfs(int si, int sj, vector<vector<int>> &grid)
     {
         vis[si][sj] = true;
@@ -35,7 +36,6 @@ public:
         n = grid.size();
         m = grid[0].size();
         int mx = 0; 
-        
         for (int i = 0; i < n; i++)
         {
             for (int j = 0; j < m; j++)
