@@ -30,16 +30,16 @@ public:
         }
     }
  
-    int closedIsland(vector<vector<int>> &grid)
+    int closedIsland(vector<vector<int>> &grid)   
     {
-        memset(vis, false, sizeof(vis));
+        memset(vis, false, sizeof(vis));    
         n = grid.size();
-        m = grid[0].size();
+        m = grid[0].size();    
         int ans = 0;
         
         for (int i = 0; i < n; i++)
         {
-            for (int j = 0; j < m; j++)
+            for (int j = 0; j < m; j++)   
             {
                 if (!vis[i][j] && grid[i][j] == 0)
                 {
@@ -52,6 +52,6 @@ public:
                 }
             }
         }  
-        return ans;
+        return ans;    
     }
 };
