@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std; 
-class Solution
+class Solution 
 {
 public:
     int n, m;
@@ -13,7 +13,7 @@ public:
         else
             return false;
     }
-    bool flag;
+    bool flag; 
     void dfs(int si, int sj, vector<vector<int>> &grid)
     {
         vis[si][sj] = true;
@@ -36,6 +36,7 @@ public:
         n = grid.size();
         m = grid[0].size();
         int ans = 0;
+        
         for (int i = 0; i < n; i++)
         {
             for (int j = 0; j < m; j++)
