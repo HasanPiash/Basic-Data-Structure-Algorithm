@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std; 
-
 class Solution
 {
 public:
@@ -29,12 +28,14 @@ public:
             }
         }
     }
+
     int maxAreaOfIsland(vector<vector<int>> &grid)
     {
         memset(vis, false, sizeof(vis));
         n = grid.size();
         m = grid[0].size();
-        int mx = 0;
+        int mx = 0; 
+        
         for (int i = 0; i < n; i++)
         {
             for (int j = 0; j < m; j++)
