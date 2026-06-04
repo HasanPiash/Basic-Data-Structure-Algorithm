@@ -12,8 +12,6 @@ int main()
         {
             cin >> mat[i][j];
         }
-    }
-    
     vector<pair<int, int>> v[n];
     for (int i = 0; i < n; i++)
     {
@@ -25,7 +23,7 @@ int main()
             }
         } 
     }
-    
+     
     for (int i = 0; i < n; i++)
     {
         cout << i << " -> ";
