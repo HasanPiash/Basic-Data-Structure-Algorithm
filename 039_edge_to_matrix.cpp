@@ -4,7 +4,8 @@ int main()
 {
     int n, e;
     cin >> n >> e;
-    int mat[n][n];
+    int mat[n][n];  
+    
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
@@ -14,6 +15,7 @@ int main()
                 mat[i][j] = 0;
         }
     }
+    
     while (e--)
     {
         int a, b, c;
@@ -21,6 +23,7 @@ int main()
         mat[a][b] = c;
         mat[b][a] = c;
     }
+    
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
