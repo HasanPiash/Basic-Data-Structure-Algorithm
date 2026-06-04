@@ -5,7 +5,7 @@ int main()
     int n;
     cin >> n;
     int mat[n][n];
-     
+      
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
@@ -13,7 +13,6 @@ int main()
             cin >> mat[i][j];
         }
     }
-     
     vector<int> v[n];
     for (int i = 0; i < n; i++)
     {
@@ -25,7 +24,7 @@ int main()
             }
         }
     }
-    
+     
     for (int i = 0; i < n; i++)
     {
         cout << i << " -> ";
