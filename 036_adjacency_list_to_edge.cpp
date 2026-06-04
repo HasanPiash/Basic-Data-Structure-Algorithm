@@ -11,12 +11,13 @@ public:
         this->w = w;
     }
 };
- 
+  
 int main()
 {
     int n, e;
     cin >> n >> e;
     vector<pair<int, int>> v[n]; 
+    
     while (e--)
     {
         int a, b, c;
@@ -40,4 +41,4 @@ int main()
         cout << edge.u << " " << edge.v << " " << edge.w << endl;
     }
     return 0;
-} 
+}
