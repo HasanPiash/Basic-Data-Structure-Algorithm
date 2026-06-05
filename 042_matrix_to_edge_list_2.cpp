@@ -11,18 +11,19 @@ public:
         this->w = w;
     }
 };
+
 int main()
 {
     int n;
     cin >> n;
-    int mat[n][n];
+    int mat[n][n]; 
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
         {
             cin >> mat[i][j];
         }
-    }
+    } 
     vector<Edge> edgeList;
     for (int i = 0; i < n; i++)
     {
@@ -33,7 +34,7 @@ int main()
                 edgeList.push_back(Edge(i, j, mat[i][j]));
             }
         }
-    }
+    } 
     for (Edge edge : edgeList)
     {
         cout << edge.u << " " << edge.v << " " << edge.w << endl;
