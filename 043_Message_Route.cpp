@@ -11,11 +11,12 @@ void bfs(int s)
     q.push(s);
     vis[s] = true;
     dis[s] = 0;
+    
     while (!q.empty())
     {
         int par = q.front();
         q.pop();
-        for (int child : v[par])
+        for (int child : v[par]) 
         {
             if (!vis[child])
             {
@@ -27,6 +28,7 @@ void bfs(int s)
         }
     }
 }
+
 int main()
 {
     int n, e;
@@ -41,7 +43,7 @@ int main()
     memset(vis, false, sizeof(vis));
     memset(dis, -1, sizeof(dis));
     memset(parent, -1, sizeof(parent));
-    bfs(1);
+    bfs(1); 
     if (dis[n] == -1)
         cout << "IMPOSSIBLE" << endl;
     else
