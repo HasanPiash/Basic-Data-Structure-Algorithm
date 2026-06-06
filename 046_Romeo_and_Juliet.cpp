@@ -25,9 +25,10 @@ void bfs(int s)
         }
     }
 }
-int main()
+
+int main() 
 {
-    int n, e;
+    int n, e; 
     cin >> n >> e;
     while (e--)
     {
@@ -36,6 +37,7 @@ int main()
         v[a].push_back(b);
         v[b].push_back(a);
     }
+    
     memset(vis, false, sizeof(vis));
     memset(dis, -1, sizeof(dis));
     int src, d, k;
@@ -45,5 +47,5 @@ int main()
         cout << "YES" << endl;
     else
         cout << "NO" << endl;
-    return 0;
+    return 0; 
 }
