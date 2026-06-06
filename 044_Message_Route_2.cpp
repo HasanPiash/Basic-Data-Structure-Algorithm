@@ -24,7 +24,8 @@ void bfs(int s)
         }
     }
 }
-int main()
+ 
+int main() 
 {
     int n, e;
     cin >> n >> e;
@@ -35,10 +36,11 @@ int main()
         v[a].push_back(b);
         v[b].push_back(a);
     }
+    
     memset(vis, false, sizeof(vis));
     memset(parent, -1, sizeof(parent));
     bfs(1);
-    int x = n;
+    int x = n; 
     vector<int> path;
     while (x != -1)
     {
@@ -54,6 +56,6 @@ int main()
         for (int val : path)
             cout << val << " ";
         cout << endl;
-    }
+    } 
     return 0;
 }
