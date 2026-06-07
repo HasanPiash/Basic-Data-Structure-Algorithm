@@ -5,7 +5,7 @@ using namespace std;
 const ll N = 1e5 + 5;
 vector<pi> v[N];
 ll dis[N];
-ll par[N];
+ll par[N];   
 class cmp
 {
 public:
@@ -14,6 +14,7 @@ public:
         return a.second > b.second;
     }
 };
+
 void dijkstra(ll s)
 {
     priority_queue<pi, vector<pi>, cmp> pq;
@@ -38,6 +39,7 @@ void dijkstra(ll s)
         }
     }
 }
+
 int main()
 {
     ll n, e;
@@ -49,6 +51,7 @@ int main()
         v[a].push_back({b, c});
         v[b].push_back({a, c});
     }
+    
     for (ll i = 1; i <= n; i++)
     {
         dis[i] = 1e18;
@@ -66,7 +69,7 @@ int main()
             path.push_back(x);
             x = par[x];
         }
-        reverse(path.begin(), path.end());
+        reverse(path.begin(), path.end());  
         for (ll val : path)
             cout << val << " ";
         cout << endl;
