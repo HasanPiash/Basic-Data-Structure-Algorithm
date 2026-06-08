@@ -4,7 +4,7 @@ const int N = 105;
 vector<int> v[N];
 int dis_from_src[N];
 int dis_from_des[N];
-bool vis[N];
+bool vis[N];    
 void bfs(int s, int track)
 {
     queue<int> q;
@@ -14,6 +14,7 @@ void bfs(int s, int track)
     else
         dis_from_des[s] = 0;
     vis[s] = true;
+    
     while (!q.empty())
     {
         int par = q.front();
@@ -31,7 +32,8 @@ void bfs(int s, int track)
             }
         }
     }
-}
+} 
+
 int main()
 {
     int t;
@@ -48,6 +50,7 @@ int main()
             v[a].push_back(b);
             v[b].push_back(a);
         }
+        
         int s, d;
         cin >> s >> d;
         memset(vis, false, sizeof(false));
@@ -57,6 +60,7 @@ int main()
         {
             vis[i] = false;
         }
+        
         memset(dis_from_des, -1, sizeof(dis_from_des));
         bfs(d, 2);
         int ans = INT_MIN;
@@ -68,7 +72,7 @@ int main()
         cout << "Case " << cs++ << ": " << ans << endl;
         for (int i = 0; i < n; i++)
         {
-            v[i].clear();
+            v[i].clear();   
         }
     }
     return 0;
