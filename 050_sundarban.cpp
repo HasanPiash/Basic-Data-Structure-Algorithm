@@ -2,8 +2,8 @@
 using namespace std; 
 char a[50][50];
 bool vis[50][50];
-int dis[50][50];
-int n;
+int dis[50][50];   
+int n;  
 vector<pair<int, int>> d;
 bool valid(int ci, int cj)
 {
@@ -12,6 +12,7 @@ bool valid(int ci, int cj)
     else
         return false;
 }
+
 void bfs(int si, int sj)
 {
     queue<pair<int, int>> q;
@@ -35,13 +36,14 @@ void bfs(int si, int sj)
         }
     }
 }
+
 int main()
 {
     d.push_back({0, 1});
     d.push_back({0, -1});
     d.push_back({-1, 0});
     d.push_back({1, 0});
-    while (cin >> n)
+    while (cin >> n)   
     {
         int si, sj;
         int di, dj;
@@ -61,7 +63,7 @@ int main()
                     dj = j;
                 }
             }
-        }
+        }   
         memset(vis, false, sizeof(vis));
         memset(dis, -1, sizeof(dis));
         bfs(si, sj);
