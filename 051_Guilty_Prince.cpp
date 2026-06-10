@@ -2,7 +2,7 @@
 using namespace std;
 const int N = 25;
 char a[N][N];
-bool vis[N][N];
+bool vis[N][N];   
 int cnt;
 vector<pair<int, int>> d = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}};
 int n, m;
@@ -13,6 +13,7 @@ bool valid(int ci, int cj)
     else
         return false;
 }
+ 
 void dfs(int si, int sj)
 {
     vis[si][sj] = true;
@@ -27,6 +28,7 @@ void dfs(int si, int sj)
         }
     }
 }
+
 int main()
 {
     int t;
@@ -48,6 +50,7 @@ int main()
                 }
             }
         }
+        
         cnt = 0;
         memset(vis, false, sizeof(vis));
         dfs(si, sj);
