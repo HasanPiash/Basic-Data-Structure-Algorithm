@@ -11,6 +11,7 @@ void dsu_initialize(int n)
         group_size[i] = 1;
     }
 }
+
 int dsu_find(int node)
 {
     if (parent[node] == -1)
@@ -19,6 +20,7 @@ int dsu_find(int node)
     parent[node] = leader;
     return leader;
 }
+
 void dsu_union_by_size(int node1, int node2)
 {
     int leaderA = dsu_find(node1);
@@ -34,6 +36,7 @@ void dsu_union_by_size(int node1, int node2)
         group_size[leaderB] += group_size[leaderA];
     }
 }
+ 
 int main()
 {
     int n;
@@ -66,7 +69,7 @@ int main()
             create.push_back({1, i});
             dsu_union_by_size(1, i);
         }
-    }
+    } 
     for (int i = 0; i < bad.size(); i++)
     {
         cout << bad[i].first << " " << bad[i].second << " " << create[i].first << " " << create[i].second << endl;
