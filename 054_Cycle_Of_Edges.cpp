@@ -9,13 +9,15 @@ public:
         for(int i=1; i<=n; i++){
             prnt[i]=i;
         }
-    }
+    } 
+
     int find(int x){
         if(prnt[x] !=x){
             prnt[x]=find(prnt[x]);
         }
         return prnt[x];
     }
+
     bool CclSet(int x,int y){
         int rootX=find(x);
         int rootY=find(y);
