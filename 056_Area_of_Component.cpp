@@ -9,6 +9,7 @@ int dy[]={0,0,-1,1};
 bool isVld(long long int x,long long int y){
     return (x>=0 && x<N && y>=0 && y<M && !vstd[x][y] && grid[x][y]=='.');
 }
+
 long long int bfs(long long int sX,long long int sY){
     queue<pair<long long int,long long int>>q;
     q.push({sX,sY});
@@ -30,6 +31,7 @@ long long int bfs(long long int sX,long long int sY){
     }
     return size;
 }
+ 
 int main(){
     cin>>N>>M;
     for(long long int i=0; i<N; i++){
@@ -49,6 +51,7 @@ int main(){
             }
         }
     }
+    
     if(Cmpnnt){
         cout<<minArea<<endl;
     }
