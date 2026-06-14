@@ -33,7 +33,8 @@ public:
                 rnk[rootX]++;
             }
             return true;  
-        }
+        }    
+        
         return false; 
     }
 };
@@ -50,6 +51,7 @@ int main(){
             clEdg++;
         }
     }
+    
     cout<<clEdg<<endl;
     return 0;
 }
