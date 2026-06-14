@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>   
 using namespace std;
 const int N = 25;
 char a[N][N];
@@ -50,11 +50,11 @@ int main()
                 }
             }
         }
-        
         cnt = 0;
         memset(vis, false, sizeof(vis));
         dfs(si, sj);
         cout << "Case " << cs++ << ": " << cnt << endl;
     }
+    
     return 0;
 }
