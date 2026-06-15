@@ -3,7 +3,7 @@ using namespace std;
 char a[50][50];
 bool vis[50][50];
 int dis[50][50];   
-int n;  
+int n;
 vector<pair<int, int>> d;
 bool valid(int ci, int cj)
 {
@@ -23,6 +23,7 @@ void bfs(int si, int sj)
     {
         pair<int, int> par = q.front();
         q.pop();
+        
         for (int i = 0; i < 4; i++)
         {
             int ci = par.first + d[i].first;
@@ -36,7 +37,7 @@ void bfs(int si, int sj)
         }
     }
 }
-
+ 
 int main()
 {
     d.push_back({0, 1});
@@ -69,5 +70,6 @@ int main()
         bfs(si, sj);
         cout << dis[di][dj] << endl;
     }
+    
     return 0;
 }
