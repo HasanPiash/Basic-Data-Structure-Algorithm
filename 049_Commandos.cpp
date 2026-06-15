@@ -3,7 +3,7 @@ using namespace std;
 const int N = 105;    
 vector<int> v[N];
 int dis_from_src[N];
-int dis_from_des[N];
+int dis_from_des[N];  
 bool vis[N];    
 void bfs(int s, int track)
 {
@@ -14,7 +14,6 @@ void bfs(int s, int track)
     else
         dis_from_des[s] = 0;
     vis[s] = true;
-    
     while (!q.empty())
     {
         int par = q.front();
@@ -33,7 +32,7 @@ void bfs(int s, int track)
         }
     }
 } 
-
+  
 int main()
 {
     int t;
@@ -50,12 +49,12 @@ int main()
             v[a].push_back(b);
             v[b].push_back(a);
         }
-        
+         
         int s, d;
         cin >> s >> d;
         memset(vis, false, sizeof(false));
         memset(dis_from_src, -1, sizeof(dis_from_src));
-        bfs(s, 1);
+        bfs(s, 1); 
         for (int i = 0; i < n; i++)
         {
             vis[i] = false;
