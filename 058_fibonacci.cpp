@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>   
 #define ll long long
 using namespace std;
 const ll N = 1e6 + 5;
@@ -16,7 +16,8 @@ ll fibo(ll n)
     ll ans = fibo(n - 1) + fibo(n - 2);
     dp[n] = ans;
     return ans;
-}
+} 
+
 int main()
 {
     ll n;
@@ -25,3 +26,4 @@ int main()
     cout << fibo(n) << endl;
     return 0;
 }
+ 
