@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>  
 using namespace std;
 int main()
 {
@@ -7,11 +7,13 @@ int main()
     int a[n];
     a[0] = 0;
     a[1] = 1;
+    
     // O(N)
+    
     for (int i = 2; i <= n; i++)
     {
         a[i] = a[i - 1] + a[i - 2];
     }
-    cout << a[n] << endl;
+    cout << a[n] << endl;  
     return 0;
 }
