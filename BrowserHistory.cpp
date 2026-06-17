@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
 class BrowserHistory
 {
@@ -11,6 +11,7 @@ public:
         LNode *next;
         LNode(string x):val(x),prev(NULL),next(NULL){}
     };
+
     LNode *head;
     LNode *tail;
     LNode *crnt;
@@ -31,6 +32,7 @@ public:
         }
         crnt=head;
     }
+
     void process_cmnd(int Qrs){
         for(int i=0; i<Qrs; ++i){
             string cmnd;
@@ -56,6 +58,7 @@ public:
             }
         }
     }
+
     void visit(string &addrs){
         LNode *tmp=head;
         while(tmp){
@@ -68,6 +71,7 @@ public:
         }
         cout<<"Not Available"<<endl;
     }
+
     void next(){
         if(crnt && crnt->next){
             crnt=crnt->next;
@@ -102,6 +106,7 @@ public:
         return false;
     }
 };
+
 int main()
 {
     BrowserHistory brsr_histr;
