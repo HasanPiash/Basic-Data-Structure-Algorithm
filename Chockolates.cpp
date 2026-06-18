@@ -1,5 +1,5 @@
 #include <bits/stdc++.h> 
-using namespace std;
+using namespace std;  
 int main(){
     int T; 
     cin>>T;
@@ -24,6 +24,7 @@ int main(){
         {
             DPrg[0][i]=false; 
         }
+        
         for(int i=1; i<=N;i++){
             for(int j=0; j<=S; j++){
                 if(a[i-1]<=j)
@@ -35,6 +36,7 @@ int main(){
                 }
             }
         }
+        
         if(DPrg[N][S])
         {
             cout<<"YES"<<endl;
@@ -43,5 +45,6 @@ int main(){
             cout<<"NO"<<endl;
         }
     }
+    
     return 0;
 }
