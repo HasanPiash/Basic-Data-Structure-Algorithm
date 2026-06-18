@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
 class Elimination{
 public:
@@ -9,6 +9,7 @@ public:
             {
                 charStk.pop();
             }
+                
             else{
                 charStk.push(c);
             }
@@ -16,6 +17,7 @@ public:
         return charStk.empty();
     }
 };
+
 int main(){
     int tC;
     cin>>tC;
@@ -27,6 +29,7 @@ int main(){
         {
             cout<<"YES"<<endl;
         }
+            
         else
         {
             cout<<"NO"<<endl;
