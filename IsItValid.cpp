@@ -1,9 +1,9 @@
-#include<bits/stdc++.h> 
+#include<bits/stdc++.h>
 using namespace std;
 class IsItValid{
 public:
     bool Is_It_Valid(string s){
-        stack<char>st;
+        stack<char>st;  
         for(char c:s){
             if(c=='0'){
                 if(!st.empty() && st.top()=='1')
@@ -14,6 +14,7 @@ public:
                     st.push(c);
                 }
             }
+                
             else if(c=='1'){
                 if(!st.empty() && st.top()=='0')
                 {
@@ -27,8 +28,9 @@ public:
         return st.empty();
     }
 };
+
 int main(){
-    int T;
+    int T; 
     cin>>T;
     IsItValid valdt;
     for(int i=0; i<T; ++i){
