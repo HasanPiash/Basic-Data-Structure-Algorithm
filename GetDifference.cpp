@@ -1,7 +1,7 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
 class Node{
-public:
+public:  
     int val;
     Node *next;
     Node(int val){
@@ -9,6 +9,7 @@ public:
         this->next=NULL;
     }
 };
+
 void insert_tail(Node *&head,Node *&tail,int v){
     Node *newNode=new Node(v);
     if(head==NULL){
@@ -20,6 +21,7 @@ void insert_tail(Node *&head,Node *&tail,int v){
         tail=newNode;
     }
 }
+
 int max_min_diff(Node *head){
     if(head==NULL){
         return 0;
@@ -38,6 +40,7 @@ int max_min_diff(Node *head){
     }
     return maxVal-minVal;
 }
+
 int main(){
     int val;
     Node *head=NULL;
