@@ -2,17 +2,16 @@
 #include <vector>
 #include <queue>
 #include <algorithm>
-
 using namespace std;
 
 // Definition for a binary tree node.
 struct TreeNode {
-    int val;
+    int val;  
     TreeNode* left;
     TreeNode* right;
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
-
+ 
 // Function to insert nodes in level order
 TreeNode* insertLevelOrder(int arr[], int n) {
     if (n == 0) return NULL;
@@ -45,7 +44,7 @@ TreeNode* insertLevelOrder(int arr[], int n) {
     }
     return root;
 }
-
+ 
 // Function to collect leaf nodes
 void collectLeafNodes(TreeNode* root, vector<int>& leafNodes) {
     if (!root) return;
@@ -60,12 +59,10 @@ void collectLeafNodes(TreeNode* root, vector<int>& leafNodes) {
     collectLeafNodes(root->right, leafNodes);
 }
 
-int main() {
+int main() { 
     int arr[] = {10, 20, 30, 40, 50, -1, 60, -1, -1, -1, -1, -1, -1};
     int n = sizeof(arr) / sizeof(arr[0]);
-
     TreeNode* root = insertLevelOrder(arr, n);
-
     vector<int> leafNodes;
     collectLeafNodes(root, leafNodes);
 
@@ -76,6 +73,5 @@ int main() {
     for (int val : leafNodes) {
         cout << val << " ";
     }
-
     return 0;
 }
