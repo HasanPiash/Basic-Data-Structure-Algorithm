@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
 class DoublyLinkedList{
 public:
@@ -9,6 +9,7 @@ public:
         Node* prev;
         Node(int val):val(val),next(NULL),prev(NULL){}
     };
+
     Node* head;
     Node* tail;
     DoublyLinkedList():head(NULL),tail(NULL){}
@@ -36,6 +37,7 @@ public:
         return true;
     }
 };
+
 int main(){
     DoublyLinkedList dll;
     int val;
@@ -47,6 +49,6 @@ int main(){
     }
     else{
         cout<<"NO"<<endl;
-    }
+    }   
     return 0;
 }
