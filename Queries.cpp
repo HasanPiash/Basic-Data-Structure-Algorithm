@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
 class Node{
 public:
@@ -9,6 +9,7 @@ public:
         this->next=NULL;
     }
 };
+
 class LnkdList{
 private:
     Node *head;
@@ -32,7 +33,7 @@ public:
             tmp=tmp->next;
         }
         tmp->next=newNode;
-    }
+    } 
     void delete_Idx(int idx){
         if(head==NULL){
             return;
@@ -66,6 +67,7 @@ public:
         cout<<endl;
     }
 };
+
 int main(){
     LnkdList list;
     int Q;
