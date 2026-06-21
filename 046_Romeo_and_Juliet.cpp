@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std; 
 const int N = 1e5 + 5;
-vector<int> v[N];
+vector<int> v[N]; 
 bool vis[N];
 int dis[N];
 void bfs(int s)
@@ -25,7 +25,7 @@ void bfs(int s)
         }
     }
 }
-
+ 
 int main() 
 {
     int n, e; 
@@ -43,6 +43,7 @@ int main()
     int src, d, k;
     cin >> src >> d >> k;
     bfs(src);
+    
     if (dis[d] != -1 && dis[d] <= k * 2)
         cout << "YES" << endl;
     else
