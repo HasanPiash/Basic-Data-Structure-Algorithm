@@ -1,6 +1,6 @@
-#include<bits/stdc++.h>
+#include<bits/stdc++.h> 
 using namespace std; 
-const int N=1005;
+const int N=1005; 
 const long long INFT=1e18;
 vector<pair<int,int>>adj[N];
 long long dist[N];
@@ -11,7 +11,7 @@ void CanGo(int src,int n){
     }
     dist[src]=0;
     dw.push(make_pair(0,src));
-    
+     
     while(!dw.empty()){
         pair<long long,int>prnt=dw.top();
         dw.pop();
@@ -29,7 +29,7 @@ void CanGo(int src,int n){
     }
 }
 
-int main(){
+int main(){   
     int N,E;
     cin>>N>>E;
     for(int i=0; i<E; i++){
@@ -37,6 +37,7 @@ int main(){
         cin>>A>>B>>W;
         adj[A].push_back(make_pair(B,W));
     }
+    
     int source;
     cin>>source;
     CanGo(source,N);
