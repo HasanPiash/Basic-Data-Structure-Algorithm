@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std; 
 class CanGoAgain{
-public:
+public:  
     int A,B,W;
     CanGoAgain(int A,int B,int W):A(A),B(B),W(W){}
 };
@@ -21,6 +21,7 @@ void bellmanFord(int srce,int n){
             }
         }
     }
+    
     for(const CanGoAgain& CanGoAgain : edges){
         if(dst[CanGoAgain.A]!=LLONG_MAX && dst[CanGoAgain.A]+CanGoAgain.W<dst[CanGoAgain.B]){
             NgtvCycle=true;
@@ -37,7 +38,7 @@ int main(){
         cin>>A>>B>>W;
         edges.push_back(CanGoAgain(A,B,W));
     }
-    
+     
     int srce;
     cin>>srce;
     bellmanFord(srce,N);
@@ -45,6 +46,7 @@ int main(){
         cout<<"Negative Cycle Detected"<<endl;
         return 0; 
     }
+    
     int T;
     cin>>T;
     while(T--){
