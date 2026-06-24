@@ -1,4 +1,4 @@
-#include<bits/stdc++.h> 
+#include<bits/stdc++.h>
 using namespace std;
 int knightMoves[8][2]={
     {2,1},{2,-1},{-2,1},{-2,-1},{1,2},{1,-2},{-1,2},{-1,-2}
@@ -6,11 +6,13 @@ int knightMoves[8][2]={
 bool Valid(int x,int y,int N,int M){
     return(x>=0 && x<N && y>=0 && y<M);
 }
+
 int bfs(int N,int M,int Ki,int Kj,int Qi,int Qj){
     vector<vector<bool>>vstd(N,vector<bool>(M,false));
     queue<pair<pair<int,int>,int>>Q;
     Q.push({{Ki,Kj},0});
     vstd[Ki][Kj]=true;
+    
     while(!Q.empty()){
         pair<pair<int,int>,int>crnt=Q.front();
         Q.pop(); 
@@ -20,6 +22,7 @@ int bfs(int N,int M,int Ki,int Kj,int Qi,int Qj){
         if(x==Qi && y==Qj){
             return steps;
         }
+        
         for(int i=0; i<8; i++){
             int newX=x+knightMoves[i][0];
             int newY=y+knightMoves[i][1];
