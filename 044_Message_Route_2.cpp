@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
 const int N = 1e5 + 5;
 vector<int> v[N];
@@ -24,7 +24,7 @@ void bfs(int s)
         }
     }
 }
- 
+   
 int main() 
 {
     int n, e;
@@ -47,6 +47,7 @@ int main()
         path.push_back(x);
         x = parent[x];
     }
+    
     reverse(path.begin(), path.end());
     if (path.size() == 1)
         cout << "IMPOSSIBLE" << endl;
