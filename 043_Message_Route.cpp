@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-using namespace std; 
+using namespace std;
 const int N = 1e5 + 5;
 vector<int> v[N];
 bool vis[N];
@@ -29,7 +29,7 @@ void bfs(int s)
     }
 }
 
-int main()
+int main()  
 {
     int n, e;
     cin >> n >> e;
@@ -43,7 +43,8 @@ int main()
     memset(vis, false, sizeof(vis));
     memset(dis, -1, sizeof(dis));
     memset(parent, -1, sizeof(parent));
-    bfs(1); 
+    bfs(1);
+    
     if (dis[n] == -1)
         cout << "IMPOSSIBLE" << endl;
     else
