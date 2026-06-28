@@ -1,4 +1,4 @@
-#include<bits/stdc++.h> 
+#include<bits/stdc++.h>
 #define ll long long int
 using namespace std;
 int main(){
@@ -15,8 +15,7 @@ int main(){
                 adj[i][j]=large_val;
             }
         }
-    }   
-    
+    }    
     for(ll i=0; i<E; i++){
         ll A,B,W;
         cin>>A>>B>>W;
