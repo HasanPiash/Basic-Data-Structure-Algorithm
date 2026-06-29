@@ -30,6 +30,7 @@ public:
                 tail=newNode;
             }
         }
+        
         crnt=head;
     }
 
@@ -81,6 +82,7 @@ public:
             cout<<"Not Available"<<endl;
         }
     }
+
     void prev(){
         if(crnt && crnt->prev)
         {
@@ -91,6 +93,7 @@ public:
             cout<<"Not Available"<<endl;
         }
     }
+
     bool Cycle(LNode *head){
         LNode *slow=head;
         LNode *fast=head;
