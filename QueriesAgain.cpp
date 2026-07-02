@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-using namespace std; 
+using namespace std;
 class QrsAgain
 {
 public:
@@ -11,6 +11,7 @@ public:
         ListNode *next;
         ListNode(int x):val(x),prev(NULL),next(NULL){}
     };
+
     ListNode *head;
     ListNode *tail;
     QrsAgain():head(NULL),tail(NULL){}
@@ -58,6 +59,7 @@ public:
         print_listLtoR();
         print_listRtoL();
     }
+
     void print_listLtoR(){
         cout<<"L ->";
         ListNode *tmp=head;
@@ -89,6 +91,7 @@ public:
         }
     }
 };
+
 int main()
 {
     QrsAgain qrs_agn;
