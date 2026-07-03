@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>   
+#include <bits/stdc++.h>
 #define ll long long
 using namespace std;
 const ll N = 1e6 + 5;
@@ -24,6 +24,5 @@ int main()
     cin >> n;
     memset(dp, -1, sizeof(dp));
     cout << fibo(n) << endl;
-    return 0;
+    return 0;   
 }
- 
