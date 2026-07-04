@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
-using namespace std;
+using namespace std; 
 const int maxN = 1000;
 const int maxW = 1000;
-int dp[maxN][maxW];
+int dp[maxN][maxW]; 
 int knapsack(int n, int weight[], int value[], int W)
 {
     if (n == 0 || W == 0)
@@ -16,6 +16,7 @@ int knapsack(int n, int weight[], int value[], int W)
     {
         // duita option
         // niye dekhbo, na niye dekhbo
+        
         int op1 = knapsack(n - 1, weight, value, W - weight[n - 1]) + value[n - 1];
         int op2 = knapsack(n - 1, weight, value, W);
         return dp[n][W] = max(op1, op2);
