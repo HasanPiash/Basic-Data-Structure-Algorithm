@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-using namespace std;
+using namespace std; 
 int main()
 {
     int n;
@@ -42,7 +42,7 @@ int main()
                 dp[i][j] = op2;
             }
         }
-    }
+    } 
     
     // for (int i = 0; i <= n; i++)
     // {
