@@ -5,14 +5,13 @@ int main(){
     cin>>T;
     
     while(T--){
-        int N,W;
+        int N,W;  
         cin>>N>>W;
         vector<int>wghts(N);
         vector<int>vals(N);
         for(int i=0; i<N; ++i){
             cin>>wghts[i];
         }
-        
         for(int i=0; i<N; ++i){
             cin>>vals[i];
         }
