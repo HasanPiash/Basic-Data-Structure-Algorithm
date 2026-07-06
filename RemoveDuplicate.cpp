@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
 class Node{
 public:
@@ -9,6 +9,7 @@ public:
         this->next=NULL;
     }
 };
+
 class LnkdList{
 private:
     Node *head;
@@ -58,6 +59,7 @@ public:
         cout<<endl;
     }
 };
+
 int main(){
    LnkdList list;
     int value;
