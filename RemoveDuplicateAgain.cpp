@@ -1,4 +1,4 @@
-#include<bits/stdc++.h> 
+#include<bits/stdc++.h>
 using namespace std;
 class RemoveDuplicate{
 public:
@@ -16,6 +16,7 @@ public:
         cout<<endl;
     }
 };
+
 int main(){
    RemoveDuplicate rmvDuplicate;
     list<int>dplct;
