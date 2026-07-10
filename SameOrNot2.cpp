@@ -1,4 +1,4 @@
-#include<bits/stdc++.h> 
+#include<bits/stdc++.h>
 using namespace std;
 class SameOrNotII{
 public:
@@ -30,6 +30,7 @@ public:
         return qFrontIdx>=qData.size();
     }
 };
+
 void check_stk_q_same(int n,int m,vector<int>& stack_val,vector<int>& queue_val){
    SameOrNotII s_n;
     for(int i=0; i<n; ++i){
@@ -55,6 +56,7 @@ void check_stk_q_same(int n,int m,vector<int>& stack_val,vector<int>& queue_val)
         cout<<"NO"<<endl;
     }
 }
+
 int main(){
     int n,m;
     cin>>n>>m;
