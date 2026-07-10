@@ -1,4 +1,4 @@
-#include<bits/stdc++.h> 
+#include<bits/stdc++.h>
 using namespace std;
 class SameOrNot{
 public:
@@ -20,6 +20,7 @@ public:
         outputStk.pop();
         return topValue;
     }
+
     int peek(){
         if(outputStk.empty()){
             while(!inputStk.empty())
@@ -34,6 +35,7 @@ public:
         return inputStk.empty() && outputStk.empty();
     }
 };
+
 void check_stk_q_same(int n,int m,vector<int>& stack_val,vector<int>& queue_val){
     stack<int>s;
     for(int i=0; i<n; ++i){
@@ -59,6 +61,7 @@ void check_stk_q_same(int n,int m,vector<int>& stack_val,vector<int>& queue_val)
         cout<<"NO"<<endl;
     }
 }
+
 int main(){
     int n,m;
     cin>>n>>m;
