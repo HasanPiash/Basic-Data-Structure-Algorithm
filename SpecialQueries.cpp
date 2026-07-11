@@ -1,4 +1,4 @@
-#include<bits/stdc++.h> 
+#include<bits/stdc++.h>
 using namespace std;
 class SpecialQrs{
 public:
@@ -22,6 +22,7 @@ public:
         return lst.empty();
     }
 };
+
 int main()
 {
     SpecialQrs q;
@@ -35,6 +36,7 @@ int main()
             cin>>s;
             q.push(s);
         }
+            
         else if(c=='1'){
             if(!q.empty()){
                 cout<<q.front()<<endl;
