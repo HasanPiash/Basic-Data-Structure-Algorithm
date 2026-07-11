@@ -1,7 +1,6 @@
 #include <iostream>
-#include <queue> 
+#include <queue>
 using namespace std;
-
 // Definition for a binary tree node.
 struct TreeNode {
     int val;
@@ -13,14 +12,13 @@ struct TreeNode {
 // Function to insert nodes in level order
 TreeNode* insertLevelOrder(int arr[], int n) {
     if (n == 0) return NULL;
-
+    
     // Create the root of the tree
     TreeNode* root = new TreeNode(arr[0]);
 
     // Queue to keep track of nodes
     queue<TreeNode*> q;
     q.push(root);
-
     int i = 1;
     while (!q.empty() && i < n) {
         TreeNode* currentNode = q.front();
@@ -57,11 +55,8 @@ int sumOfNonLeafNodes(TreeNode* root) {
 int main() {
     int arr[] = {10, 20, 30, 40, 50, -1, 60, -1, -1, -1, -1, -1, -1};
     int n = sizeof(arr) / sizeof(arr[0]);
-
     TreeNode* root = insertLevelOrder(arr, n);
-
     int result = sumOfNonLeafNodes(root);
     cout << result << endl; // Output the result
-
     return 0;
 }
