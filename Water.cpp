@@ -1,6 +1,7 @@
-#include<bits/stdc++.h> 
+#include<bits/stdc++.h>
 using namespace std;
-void Water(const vector<int>& hghts){
+void Water(const vector<int>& hghts)
+{
     int lrgst=-1,secondLrgst=-1;
     for(int hght:hghts)
     {
@@ -14,7 +15,8 @@ void Water(const vector<int>& hghts){
         }
     }
     size_t firstIndex=hghts.size(),secondIndex=hghts.size();
-    for(size_t i=0; i<hghts.size(); i++){
+    for(size_t i=0; i<hghts.size(); i++)
+    {
         if(hghts[i]==lrgst && firstIndex==hghts.size()){
             firstIndex=i;
         }
@@ -22,11 +24,13 @@ void Water(const vector<int>& hghts){
             secondIndex=i;
         }
     }
-    if(firstIndex>secondIndex){
+    if(firstIndex>secondIndex)
+    {
         swap(firstIndex,secondIndex);
     }
     cout<<firstIndex<<" "<<secondIndex<<endl;
 }
+
 int main(){
     int T;
     cin>>T;
