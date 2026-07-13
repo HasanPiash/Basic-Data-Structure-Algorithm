@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
 class tcSolver{
 public:
@@ -22,6 +22,7 @@ public:
         return false;
     }
 };
+
 int main(){
     int T;
     cin>>T;
