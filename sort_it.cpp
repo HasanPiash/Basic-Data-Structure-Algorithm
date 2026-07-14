@@ -15,7 +15,8 @@ int main() {
             cout << " ";
         }
     }
-    cout << endl;
+    
+    cout << endl; 
     sort(A.begin(), A.end(), greater<int>());
     for (int i = 0; i < N; ++i) {
        cout << A[i];
@@ -23,6 +24,7 @@ int main() {
             cout << " ";
         }
     }
+    
   cout << endl;
     return 0;
 }
