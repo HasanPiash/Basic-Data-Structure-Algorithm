@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
 class Student {
 public:
@@ -8,6 +8,7 @@ public:
     int marks;
     Student(int id,string name,string section,int marks):id(id),name(name),section(section),marks(marks){}
 };
+
 int main(){
     int T;
     cin>>T;
@@ -32,5 +33,5 @@ int main(){
         cout<<topStudent->id<<" " <<topStudent->name<< " "<<topStudent->section<<" "<<topStudent->marks<<endl;
         delete topStudent; 
     }
-    return 0;
+    return 0; 
 }
