@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
 class Solution
 {
@@ -17,7 +17,7 @@ public:
         }
     }
   
-    bool validPath(int n, vector<vector<int>> &edges, int source, int d)
+    bool validPath(int n, vector<vector<int>> &edges, int source, int d) 
     {
         memset(vis, false, sizeof(vis));
         for (int i = 0; i < edges.size(); i++)
@@ -27,7 +27,7 @@ public:
             v[a].push_back(b);
             v[b].push_back(a);
         }  
-        dfs(source);
+        dfs(source); 
         return vis[d];
     }
 };
