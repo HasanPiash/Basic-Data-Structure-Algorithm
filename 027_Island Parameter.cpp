@@ -15,7 +15,7 @@ public:
             return false;
     }
   
-    void dfs(int si, int sj, vector<vector<int>> &grid)
+    void dfs(int si, int sj, vector<vector<int>> &grid) 
     {
         vis[si][sj] = true;
         for (int i = 0; i < 4; i++)
@@ -30,7 +30,7 @@ public:
               
             else
             {
-                ans++;
+                ans++; 
             }
             if (valid(ci, cj) && !vis[ci][cj] && grid[ci][cj] == 1)
             {
