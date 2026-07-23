@@ -1,10 +1,10 @@
-#include <bits/stdc++.h>
+#include <bits/stdc++.h> 
 using namespace std; 
 class Solution 
 {
 public:
     int n, m;
-    bool vis[105][105];
+    bool vis[105][105]; 
     vector<pair<int, int>> d = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}};
     bool valid(int ci, int cj)
     {
@@ -28,7 +28,7 @@ public:
                 dfs(ci, cj, grid);
             }
         }
-    }
+    } 
  
     int closedIsland(vector<vector<int>> &grid)   
     {
@@ -36,7 +36,6 @@ public:
         n = grid.size();
         m = grid[0].size();    
         int ans = 0;
-        
         for (int i = 0; i < n; i++)
         {
             for (int j = 0; j < m; j++)   
