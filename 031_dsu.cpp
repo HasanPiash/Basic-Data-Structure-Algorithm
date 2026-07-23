@@ -1,7 +1,7 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
 const int N = 1e5 + 5;
-int par[N];
+int par[N]; 
 int group_size[N];
 int level[N];                               
 void dsu_initialize(int n)
@@ -14,7 +14,7 @@ void dsu_initialize(int n)
     }
 }
    
-int dsu_find(int node)
+int dsu_find(int node) 
 {
     if (par[node] == -1)
         return node;
@@ -30,7 +30,7 @@ void dsu_union(int node1, int node2)
     int leaderB = dsu_find(node2);
     par[leaderA] = leaderB;
 }
-void dsu_union_by_level(int node1, int node2)
+void dsu_union_by_level(int node1, int node2) 
 {
     int leaderA = dsu_find(node1);
     int leaderB = dsu_find(node2);
