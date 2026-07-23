@@ -17,7 +17,7 @@ public:
     void dfs(int si, int sj, vector<vector<char>> &grid)
     {
         vis[si][sj] = true;
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 4; i++) 
         {
             int ci = si + d[i].first;
             int cj = sj + d[i].second;
@@ -30,7 +30,7 @@ public:
 
     int numIslands(vector<vector<char>> &grid)
     {
-        n = grid.size();
+        n = grid.size(); 
         m = grid[0].size();
         memset(vis, false, sizeof(vis));
         int ans = 0;
@@ -49,3 +49,4 @@ public:
         return ans;
     }
 };
+ 
