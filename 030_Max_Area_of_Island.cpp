@@ -1,9 +1,9 @@
-#include <bits/stdc++.h>
+#include <bits/stdc++.h> 
 using namespace std; 
 class Solution  
 {
 public:
-    bool vis[55][55];
+    bool vis[55][55]; 
     int ans;
     int n, m;   
     vector<pair<int, int>> d = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}};
@@ -47,7 +47,7 @@ public:
                     mx = max(mx, ans);
                 }
             }
-        }
+        } 
         return mx;
     }
 };
