@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>   
+#include <bits/stdc++.h>
 using namespace std;
 void convert(int n, vector<int> adj[])       
 {
@@ -12,7 +12,6 @@ void convert(int n, vector<int> adj[])
                 mat[i][j] = 1;
         }
     }
-    
     for (int i = 0; i < n; i++)
     {
         for (int child : adj[i])
@@ -20,7 +19,6 @@ void convert(int n, vector<int> adj[])
             mat[i][child] = 1;
         }
     }
-    
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
@@ -43,7 +41,6 @@ int main()
         v[a].push_back(b);
         v[b].push_back(a);
     }
-    
     convert(n, v);
     return 0;
 }
