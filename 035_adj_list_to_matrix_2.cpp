@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
 void convert(int n, vector<pair<int, int>> adj[])
 {
@@ -12,7 +12,6 @@ void convert(int n, vector<pair<int, int>> adj[])
                 mat[i][j] = 0;
         }
     }
-    
     for (int i = 0; i < n; i++)
     {
         for (pair<int, int> child : adj[i])
@@ -22,7 +21,6 @@ void convert(int n, vector<pair<int, int>> adj[])
             mat[i][childNode] = cost;
         }
     }
-     
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
@@ -38,7 +36,6 @@ int main()
     int n, e;
     cin >> n >> e;
     vector<pair<int, int>> v[n];
-     
     while (e--)
     {
         int a, b, c;
