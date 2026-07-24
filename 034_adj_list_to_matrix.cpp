@@ -1,8 +1,8 @@
-#include <bits/stdc++.h>
+#include <bits/stdc++.h> 
 using namespace std;
 void convert(int n, vector<int> adj[])       
 {
-    int mat[n][n];
+    int mat[n][n]; 
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
