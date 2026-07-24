@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <bits/stdc++.h> 
 using namespace std;
 const int N = 1e5 + 5;
 int parent[N];
@@ -7,7 +7,7 @@ void dsu_initialize(int n)
 {
     for (int i = 0; i < n; i++)
     {
-        parent[i] = -1;
+        parent[i] = -1; 
         group_size[i] = 1;
     }
 }
