@@ -1,5 +1,5 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include <bits/stdc++.h> 
+using namespace std; 
 const int N = 1e5 + 5; 
 int parent[N];
 int group_size[N];    
@@ -20,7 +20,6 @@ int dsu_find(int node)
     parent[node] = leader;
     return leader;
 }
-
 void dsu_union_by_size(int node1, int node2)
 {
     int leaderA = dsu_find(node1);
@@ -42,8 +41,7 @@ int main()
     int n, e;
     cin >> n >> e;
     dsu_initialize(n);
-    bool cycle = false;   
-    
+    bool cycle = false;
     while (e--)
     {
         int a, b;
