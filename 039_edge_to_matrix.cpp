@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
@@ -15,7 +15,6 @@ int main()
                 mat[i][j] = 0;
         }
     }
-    
     while (e--)
     {
         int a, b, c;
@@ -23,7 +22,6 @@ int main()
         mat[a][b] = c;
         mat[b][a] = c;
     }
-    
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
