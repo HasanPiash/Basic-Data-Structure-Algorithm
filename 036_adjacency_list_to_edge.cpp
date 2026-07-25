@@ -1,5 +1,5 @@
-#include <bits/stdc++.h>  
-using namespace std;
+#include <bits/stdc++.h>
+using namespace std; 
 class Edge
 {
 public:
@@ -17,14 +17,12 @@ int main()
     int n, e;
     cin >> n >> e;
     vector<pair<int, int>> v[n]; 
-    
     while (e--)
     {
         int a, b, c;
         cin >> a >> b >> c;
         v[a].push_back({b, c});
     }
-    
     vector<Edge> edgeList;
     for (int i = 0; i < n; i++)
     {
@@ -34,8 +32,6 @@ int main()
             int cost = child.second;
             edgeList.push_back(Edge(i, childNode, cost));
         }
-    }
-    
     for (Edge edge : edgeList)
     {
         cout << edge.u << " " << edge.v << " " << edge.w << endl;
