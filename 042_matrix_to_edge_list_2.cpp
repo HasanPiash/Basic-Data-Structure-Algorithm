@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-using namespace std;
+using namespace std; 
 class Edge 
 {
 public:
@@ -16,7 +16,7 @@ int main()
 {
     int n;
     cin >> n;
-    int mat[n][n]; 
+    int mat[n][n];
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
@@ -39,5 +39,5 @@ int main()
     {
         cout << edge.u << " " << edge.v << " " << edge.w << endl;
     }
-    return 0;
+    return 0; 
 }
