@@ -4,14 +4,13 @@ const int N = 1e5 + 5;
 vector<int> v[N];
 bool vis[N];
 int dis[N];
-int parent[N];
+int parent[N]; 
 void bfs(int s)
 {
     queue<int> q;
     q.push(s);
     vis[s] = true;
     dis[s] = 0;
-    
     while (!q.empty())
     {
         int par = q.front();
@@ -44,7 +43,6 @@ int main()
     memset(dis, -1, sizeof(dis));
     memset(parent, -1, sizeof(parent));
     bfs(1);
-    
     if (dis[n] == -1)
         cout << "IMPOSSIBLE" << endl;
     else
