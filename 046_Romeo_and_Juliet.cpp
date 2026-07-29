@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <bits/stdc++.h> 
 using namespace std; 
 const int N = 1e5 + 5;
 vector<int> v[N]; 
@@ -37,13 +37,11 @@ int main()
         v[a].push_back(b);
         v[b].push_back(a);
     }
-    
     memset(vis, false, sizeof(vis));
     memset(dis, -1, sizeof(dis));
     int src, d, k;
     cin >> src >> d >> k;
     bfs(src);
-    
     if (dis[d] != -1 && dis[d] <= k * 2)
         cout << "YES" << endl;
     else
