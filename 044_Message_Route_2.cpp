@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 1e5 + 5;
-vector<int> v[N];
+vector<int> v[N]; 
 bool vis[N];
 int parent[N];
 void bfs(int s)
@@ -24,10 +24,10 @@ void bfs(int s)
         }
     }
 }
-   
+
 int main() 
 {
-    int n, e;
+    int n, e; 
     cin >> n >> e;
     while (e--)
     {
@@ -36,7 +36,6 @@ int main()
         v[a].push_back(b);
         v[b].push_back(a);
     }
-    
     memset(vis, false, sizeof(vis));
     memset(parent, -1, sizeof(parent));
     bfs(1);
@@ -47,13 +46,12 @@ int main()
         path.push_back(x);
         x = parent[x];
     }
-    
     reverse(path.begin(), path.end());
     if (path.size() == 1)
         cout << "IMPOSSIBLE" << endl;
     else
     {
-        cout << path.size() << endl;
+        cout << path.size() << endl; 
         for (int val : path)
             cout << val << " ";
         cout << endl;
