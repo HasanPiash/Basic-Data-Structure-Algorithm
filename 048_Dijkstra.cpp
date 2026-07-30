@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 #define ll long long
 #define pi pair<ll, ll>
 using namespace std;
@@ -39,7 +39,7 @@ void dijkstra(ll s)
         }
     }
 }
-
+ 
 int main()
 {
     ll n, e;
