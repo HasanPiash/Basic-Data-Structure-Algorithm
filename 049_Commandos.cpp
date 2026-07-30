@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
 const int N = 105;    
 vector<int> v[N];
@@ -63,7 +63,7 @@ int main()
         memset(dis_from_des, -1, sizeof(dis_from_des));
         bfs(d, 2);
         int ans = INT_MIN;
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++) 
         {
             int val = dis_from_src[i] + dis_from_des[i];
             ans = max(ans, val);
