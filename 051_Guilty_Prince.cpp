@@ -1,12 +1,12 @@
-#include <bits/stdc++.h>
+#include <bits/stdc++.h> 
 using namespace std;
 const int N = 25;
 char a[N][N];
 bool vis[N][N];
 int cnt;
 vector<pair<int, int>> d = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}};
-int n, m;
-bool valid(int ci, int cj)
+int n, m; 
+bool valid(int ci, int cj) 
 {
     if (ci >= 0 && ci < n && cj >= 0 && cj < m)
         return true;
@@ -27,7 +27,7 @@ void dfs(int si, int sj)
             dfs(ci, cj);
         }
     }
-}
+} 
 
 int main()
 {
@@ -55,6 +55,5 @@ int main()
         dfs(si, sj);
         cout << "Case " << cs++ << ": " << cnt << endl;
     }
-    
     return 0;
 }
