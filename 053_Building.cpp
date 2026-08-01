@@ -1,5 +1,5 @@
-#include<bits/stdc++.h> 
-using namespace std; 
+#include<bits/stdc++.h>
+using namespace std;
 const int N=1e5+5;
 long long prnt[N];
 long long grp_size[N];
@@ -9,14 +9,12 @@ void dsu_init(long long n){
         grp_size[i]=1;
     }
 }
-
 long long dsu_fnd(long long node){
     if(prnt[node]==-1)
         return node;
     prnt[node]=dsu_fnd(prnt[node]);
     return prnt[node];
 }
-
 void dsu_unnsize(long long node1,long long node2){
     long long ldrA=dsu_fnd(node1);
     long long ldrB=dsu_fnd(node2);
@@ -56,7 +54,6 @@ int main(){
         cin>>U>>V>>W;
         eList.push_back(Building(U,V,W));
     }
-    
     sort(eList.begin(),eList.end(),cmp);
     long long ttlCost=0;
     long long eUsed=0;
