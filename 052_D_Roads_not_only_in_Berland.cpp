@@ -1,8 +1,8 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
 const int N = 1e5 + 5;
 int parent[N];
-int group_size[N];
+int group_size[N]; 
 void dsu_initialize(int n)
 {
     for (int i = 1; i <= n; i++)
@@ -11,7 +11,6 @@ void dsu_initialize(int n)
         group_size[i] = 1;
     }
 }
-
 int dsu_find(int node)
 {
     if (parent[node] == -1)
@@ -74,5 +73,5 @@ int main()
     {
         cout << bad[i].first << " " << bad[i].second << " " << create[i].first << " " << create[i].second << endl;
     }
-    return 0;
+    return 0; 
 }
