@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-using namespace std; 
+using namespace std;
 class CycleEdges{
 public:
     vector<int>prnt,rnk;
@@ -10,12 +10,12 @@ public:
             prnt[i]=i;
         }
     } 
-
+  
     int find(int x){
         if(prnt[x] !=x){
             prnt[x]=find(prnt[x]);
         }
-        return prnt[x];
+        return prnt[x]; 
     }
 
     bool CclSet(int x,int y){
@@ -51,7 +51,6 @@ int main(){
             clEdg++;
         }
     }
-    
     cout<<clEdg<<endl;
     return 0;
 }
