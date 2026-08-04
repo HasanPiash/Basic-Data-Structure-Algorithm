@@ -20,9 +20,9 @@ ll fibo(ll n)
 
 int main()
 {
-    ll n;
+    ll n; 
     cin >> n;
     memset(dp, -1, sizeof(dp));
     cout << fibo(n) << endl;
-    return 0;   
+    return 0;
 }
