@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-using namespace std;
+using namespace std; 
 /*
 Weight: 2 3 4 5
 Value: 1 3 5 3
@@ -17,7 +17,7 @@ int knapsack(int n, int weight[], int value[], int W)
         int op2 = knapsack(n - 1, weight, value, W);
         return max(op1, op2);
     }
-        
+    
     else
     {
         // ekta option
@@ -43,5 +43,5 @@ int main()
     int W;
     cin >> W;
     cout << knapsack(n, weight, value, W) << endl; 
-    return 0;
+    return 0; 
 }
