@@ -3,7 +3,6 @@ using namespace std;
 int main(){
     int T;
     cin>>T;
-    
     while(T--){
         int N,W;  
         cin>>N>>W;
@@ -21,7 +20,6 @@ int main(){
                 dp[j]=max(dp[j],dp[j-wghts[i]]+vals[i]);
             }
         }
-        
         cout<<dp[W]<<endl;
     }   
     return 0;
