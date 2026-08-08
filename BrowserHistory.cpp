@@ -11,7 +11,6 @@ public:
         LNode *next;
         LNode(string x):val(x),prev(NULL),next(NULL){}
     };
-
     LNode *head;
     LNode *tail;
     LNode *crnt;
@@ -30,10 +29,8 @@ public:
                 tail=newNode;
             }
         }
-        
         crnt=head;
     }
-
     void process_cmnd(int Qrs){
         for(int i=0; i<Qrs; ++i){
             string cmnd;
@@ -59,7 +56,6 @@ public:
             }
         }
     }
-
     void visit(string &addrs){
         LNode *tmp=head;
         while(tmp){
@@ -72,7 +68,6 @@ public:
         }
         cout<<"Not Available"<<endl;
     }
-
     void next(){
         if(crnt && crnt->next){
             crnt=crnt->next;
@@ -82,7 +77,6 @@ public:
             cout<<"Not Available"<<endl;
         }
     }
-
     void prev(){
         if(crnt && crnt->prev)
         {
@@ -93,7 +87,6 @@ public:
             cout<<"Not Available"<<endl;
         }
     }
-
     bool Cycle(LNode *head){
         LNode *slow=head;
         LNode *fast=head;
