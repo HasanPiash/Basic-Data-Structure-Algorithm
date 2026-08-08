@@ -8,7 +8,6 @@ int main()
     int a;
     cin >> a;   
     getchar();
-     
     // fgets(s, 100, stdin);
     cin.getline(s, 100);
     cout << a << endl;
