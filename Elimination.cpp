@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
 class Elimination{
 public:
@@ -14,7 +14,6 @@ public:
                 charStk.push(c);
             }
         }
-        
         return charStk.empty();
     }
 };
@@ -26,7 +25,6 @@ int main(){
     for(int t=0; t<tC; t++){
         string inpSt;
         cin>>inpSt;
-        
         if(elmntn.checkBin(inpSt))
         {
             cout<<"YES"<<endl;
