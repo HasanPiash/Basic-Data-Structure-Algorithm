@@ -5,7 +5,6 @@ int ExamMarks(int N,int wght[],int W){
     if(N==0 || W==0){
         return 0;
     }
-    
     if(dp[N][W]!=-1){
         return dp[N][W];
     }
@@ -13,13 +12,11 @@ int ExamMarks(int N,int wght[],int W){
         int op1=ExamMarks(N-1,wght,W-wght[N-1])+wght[N-1];
         int op2=ExamMarks(N-1,wght,W);
         return dp[N][W]=max(op1,op2);
-    }
-        
+    }    
     else{
         return dp[N][W]=ExamMarks(N-1,wght,W);
     }
 }
-
 int main(){
     int T;
     cin>>T; 
