@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
@@ -10,7 +10,6 @@ int main()
             tt=true;
         }
     }
-
     if (tt)
     {
         cout << "YES" << endl;
@@ -19,6 +18,5 @@ int main()
     {
         cout << "NO" << endl;
     }
-
     return 0;
 }
