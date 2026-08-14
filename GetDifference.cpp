@@ -21,7 +21,6 @@ void insert_tail(Node *&head,Node *&tail,int v){
         tail=newNode;
     }
 }
-
 int max_min_diff(Node *head){
     if(head==NULL){
         return 0;
@@ -38,9 +37,8 @@ int max_min_diff(Node *head){
         }
         current=current->next;
     }
-    return maxVal-minVal;
+    return maxVal-minVal; 
 }
-
 int main(){
     int val;
     Node *head=NULL;
