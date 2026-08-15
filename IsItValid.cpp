@@ -14,7 +14,7 @@ public:
                     st.push(c);
                 }
             }
-                
+            
             else if(c=='1'){
                 if(!st.empty() && st.top()=='0')
                 {
@@ -43,5 +43,5 @@ int main(){
             cout<<"NO"<<endl;
         }
     }
-    return 0;
+    return 0; 
 }
