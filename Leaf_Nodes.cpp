@@ -1,9 +1,8 @@
-#include <iostream> 
+#include <iostream>
 #include <vector>
 #include <queue>
 #include <algorithm>
 using namespace std;
-
 // Definition for a binary tree node.
 struct TreeNode {
     int val;  
@@ -11,7 +10,6 @@ struct TreeNode {
     TreeNode* right;
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
- 
 // Function to insert nodes in level order
 TreeNode* insertLevelOrder(int arr[], int n) {
     if (n == 0) return NULL;
@@ -44,7 +42,6 @@ TreeNode* insertLevelOrder(int arr[], int n) {
     }
     return root;
 }
- 
 // Function to collect leaf nodes
 void collectLeafNodes(TreeNode* root, vector<int>& leafNodes) {
     if (!root) return;
