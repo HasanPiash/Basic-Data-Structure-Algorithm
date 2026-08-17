@@ -6,7 +6,6 @@ int main(){
     queue<int>Q;
     Q.push(1);
     rcbl[1]=true;
-    
     while(!Q.empty()){
         int crrnt=Q.front();
         Q.pop();
@@ -21,7 +20,6 @@ int main(){
             rcbl[mult2]=true;
         }
     }
-    
     int T;
     cin>>T;
     while(T--){
