@@ -9,7 +9,6 @@ public:
         Node* prev;
         Node(int val):val(val),next(NULL),prev(NULL){}
     };
-
     Node* head;
     Node* tail;
     DoublyLinkedList():head(NULL),tail(NULL){}
