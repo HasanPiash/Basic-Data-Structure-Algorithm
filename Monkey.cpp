@@ -8,11 +8,9 @@ void sWrite(const string& str){
             result+=tolower(c);
         }
     }
-    
     sort(result.begin(),result.end());
     cout<<result<<endl;
 }
-
 int main(){  
     string line;
     while(getline(cin,line)){
