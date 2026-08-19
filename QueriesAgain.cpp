@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<bits/stdc++.h> 
 using namespace std;
 class QrsAgain
 {
@@ -10,7 +10,7 @@ public:
         ListNode *prev;
         ListNode *next;
         ListNode(int x):val(x),prev(NULL),next(NULL){}
-    };
+    }; 
 
     ListNode *head;
     ListNode *tail;
@@ -59,7 +59,6 @@ public:
         print_listLtoR();
         print_listRtoL();
     }
-
     void print_listLtoR(){
         cout<<"L ->";
         ListNode *tmp=head;
