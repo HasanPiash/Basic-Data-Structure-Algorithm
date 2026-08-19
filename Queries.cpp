@@ -69,11 +69,11 @@ public:
 };
 
 int main(){
-    LnkdList list;
+    LnkdList list; 
     int Q;
     cin >> Q;
     for(int i=0; i<Q; ++i){
-        int X,V;
+        int X,V; 
         cin>>X>>V;
         if(X==0){
             list.insertHd(V);
