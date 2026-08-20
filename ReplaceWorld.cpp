@@ -23,9 +23,9 @@ int main() {
             if (found) {
                 S.replace(j, a, "#");
                 b = S.size();
-            }
+            } 
         }
-        cout << S << endl;
+        cout << S << endl; 
     }
     return 0;
 }
