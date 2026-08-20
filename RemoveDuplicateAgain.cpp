@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<bits/stdc++.h> 
 using namespace std;
 class RemoveDuplicate{
 public:
@@ -15,12 +15,12 @@ public:
         }
         cout<<endl;
     }
-};
+}; 
 
 int main(){
    RemoveDuplicate rmvDuplicate;
     list<int>dplct;
-    int val;
+    int val; 
     while(cin>>val && val!=-1)
     {
         dplct.push_back(val);
