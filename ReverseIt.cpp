@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
 class Student {
 public:
@@ -12,7 +12,7 @@ public:
         cls = c;
         section = s;
         id = i;
-    } 
+    }
 };
 
 int main() 
@@ -32,5 +32,6 @@ int main()
     for (int i = 0; i < N; ++i) {
         cout << students[i].name << " " << students[i].cls << " " << students[i].section << " " << students[i].id << "\n";
     }
+    
     return 0;
 }
