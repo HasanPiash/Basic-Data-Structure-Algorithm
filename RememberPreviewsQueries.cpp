@@ -11,7 +11,6 @@ public:
         ListNode *next;
         ListNode(int x):val(x),prev(NULL),next(NULL){}
     };
-
     ListNode *head;
     ListNode *tail;
     RemPrevQrs():head(NULL),tail(NULL){}
@@ -37,7 +36,6 @@ public:
             tail=newNode;
         }
     }
-
     void delete_idx(int index){
         if(index<0)
         {
@@ -65,7 +63,6 @@ public:
         }
         delete tmp;
     }
-
     void print_LtoR(){
         cout<<"L ->";
         ListNode *tmp=head;
