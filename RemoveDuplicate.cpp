@@ -46,7 +46,7 @@ public:
                      rnr=rnr->next;
                 }
             }
-            crnt=crnt->next;
+            crnt=crnt->next; 
         }
     }
     void pList(){
@@ -70,7 +70,7 @@ int main(){
             break;
         }
         list.insertEnd(value);
-    }
+    } 
     list.removeDplcts();
     list.pList();
     return 0;
