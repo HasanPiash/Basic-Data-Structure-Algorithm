@@ -6,8 +6,9 @@ public:
     SameOrNot(){}
     void push(int x)
     {
-        inputStk.push(x);
+        inputStk.push(x); 
     }
+
     int pop(){
         if(outputStk.empty()){
             while(!inputStk.empty())
