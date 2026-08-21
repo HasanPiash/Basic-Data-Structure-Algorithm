@@ -8,7 +8,7 @@ public:
         this->val=val;
         this->next=NULL;
     }
-};
+}; 
 
 void insert_tail(Node *&head,Node *&tail,int v){
     Node *newNode=new Node(v);
@@ -31,7 +31,7 @@ int find_idx(Node *head,int X){
         crnt=crnt->next;
         idx++;
     }
-    return -1;
+    return -1; 
 }
 
 int main(){
@@ -50,6 +50,7 @@ int main(){
         int X;
         cin>>X;    
         int result=find_idx(head, X);
+        
         cout<<result<<endl;
     }
     return 0;
