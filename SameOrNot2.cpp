@@ -26,7 +26,7 @@ public:
     int frontQ(){
         return qData[qFrontIdx];
     }
-    bool emptyQ(){
+    bool emptyQ(){ 
         return qFrontIdx>=qData.size();
     }
 };
@@ -56,7 +56,6 @@ void check_stk_q_same(int n,int m,vector<int>& stack_val,vector<int>& queue_val)
         cout<<"NO"<<endl;
     }
 }
-
 int main(){
     int n,m;
     cin>>n>>m;
