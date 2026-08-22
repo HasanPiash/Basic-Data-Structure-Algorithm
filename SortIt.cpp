@@ -21,16 +21,16 @@ public:
         eng_marks = eng;
         total_marks = math_marks + eng_marks;
     }
-}; 
+};
 
 bool cmp(Student a, Student b)
  {
     if (a.total_marks == b.total_marks)
         return a.id < b.id;
-
     else
        return a.total_marks > b.total_marks;
 }
+
 int main() {
     int N;
     cin >> N;
