@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 #include <iostream>
-#include <string>
+#include <string> 
 #include <algorithm>
 using namespace std;
 class Student {
@@ -44,5 +44,6 @@ int main() {
         cout << a[i].name << " " << a[i].cls << " " << a[i].section << " "
              << a[i].id << " " << a[i].math_marks << " " << a[i].eng_marks << endl;
     }
+    
     return 0;
 }
