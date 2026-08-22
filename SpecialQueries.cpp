@@ -2,7 +2,7 @@
 using namespace std;
 class SpecialQrs{
 public:
-    list<string>lst;
+    list<string>lst; 
     void push(string val){
         lst.push_back(val);
     }
@@ -15,6 +15,7 @@ public:
             return lst.front();
         return "empty"; 
     }
+
     int size(){
         return lst.size();
     }
