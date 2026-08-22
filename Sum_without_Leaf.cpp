@@ -3,7 +3,7 @@
 using namespace std;
 // Definition for a binary tree node.
 struct TreeNode {
-    int val;
+    int val; 
     TreeNode* left;
     TreeNode* right;
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
@@ -38,20 +38,18 @@ TreeNode* insertLevelOrder(int arr[], int n) {
         }
         i++;
     }
-    return root;
+    return root; 
 }
 
 // Function to calculate the sum of all non-leaf nodes
 int sumOfNonLeafNodes(TreeNode* root) {
     if (!root) return 0;
-    
     // If the node is a leaf node, return 0
     if (!root->left && !root->right) return 0;
 
     // Calculate the sum recursively
     return root->val + sumOfNonLeafNodes(root->left) + sumOfNonLeafNodes(root->right);
 }
-
 int main() {
     int arr[] = {10, 20, 30, 40, 50, -1, 60, -1, -1, -1, -1, -1, -1};
     int n = sizeof(arr) / sizeof(arr[0]);
